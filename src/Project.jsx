@@ -3,29 +3,11 @@ import { Github,ExternalLink } from 'lucide-react';
 import airtm from './assets/airtm.png'
 import besteats from './assets/besteats.png'
 import Todo from './assets/Todo.png'
+import crypto from './assets/crypto.png'
+import portfolio from './assets/portfolio.png'
 function Project() {
   const projects = [
-    {
-      id: 1,
-      title: "E-commerce Platform",
-      description:
-        "A full-featured e-commerce platform with payment integration and admin dashboard.",
-      image: "./?height=400&width=600",
-      category: "Web",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      link: "#",
-    },
-    {
-      id: 2,
-      title: "Task Management App",
-      description:
-        "A mobile application for managing tasks and projects with team collaboration features.",
-      image: "./assets/besteats.png?height=400&width=600",
-      category: "Mobile",
-      technologies: ["React Native", "Firebase", "Redux"],
-      Gitlink: "https://github.com/Vsnikhilmaheswar/Airtm-clone",
-      Demolink: "https://airtm-clone-eight.vercel.app/"
-    },
+  
     {
       id: 3,
       title: "Airtm-clone",
@@ -42,10 +24,12 @@ function Project() {
       title: "Portfolio Website",
       description:
         "A responsive portfolio website with dark mode and animations.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: portfolio,
       category: "Web",
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      link: "#",
+      technologies: ["React", "Tailwind CSS", ],
+    Demolink : "https://vsnikhilmaheswar.vercel.app/",
+    Gitlink : "https://github.com/Vsnikhilmaheswar/Portfolioo"
+
     },
     {
       id: 5,
@@ -55,7 +39,9 @@ function Project() {
       image: besteats,
       category: "Web",
       technologies: ["React Js", "Tailwind CSS ",],
-      link: "https://best-eats-blue.vercel.app/",
+      Demolink: "https://best-eats-blue.vercel.app/",
+      Gitlink : "https://github.com/Vsnikhilmaheswar/Portfolioo"
+
     },
     {
       id: 6,
@@ -64,16 +50,28 @@ function Project() {
       image: Todo,
       category: "Web",
       technologies: ["React JS","Json Server","Tailwind CSS"],
-      link: "https://todo-frontend-react-six.vercel.app/",
+      Demolink: "https://todo-frontend-react-six.vercel.app/",
+      Gitlink : "https://github.com/Vsnikhilmaheswar/Todo-Frontend-React"
+    },
+    {
+      id: 7,
+      title: "DeepReality",
+      description: "A DeepFake detection system using VGG16",
+      image: Todo,
+      category: "Web",
+      technologies: ["React JS","FastAPI","Tailwind CSS","Tensorflow"],
+      Demolink: "https://todo-frontend-react-six.vercel.app/",
+      Gitlink : "https://github.com/Vsnikhilmaheswar/Todo-Frontend-React"
     },
   ];
 
   return (
-    <div>
-      <div className="p-5">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center pb-5 pt-15">
+    <div id="projects">
+      <div className="px-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center pb-0 pt-15">
           My Projects
         </h2>
+        <div className="h-1 w-30 bg-purple-600 mx-auto mb-4"></div>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto text-center pb-20">
         collection of projects that showcase my skills and experience in building digital products.
         </p>
@@ -111,8 +109,8 @@ function Project() {
               ))}
             </div>
             <div className="flex justify-between"> 
-                <a target="_blank" href={project.link} ><button className="flex border gap-3 p-1 px-2 rounded border-gray-300 hover:bg-black hover:text-white">    <Github size={20} className="hover:text-white"/> Code</button></a>
-            <button className="flex border gap-3 p-1 px-2 rounded  bg-black text-white"> <ExternalLink size={20} className="hover:text-white"/> Demo </button>
+                <a target="_blank" href={project.Gitlink} ><button className="flex border gap-3 p-1 px-2 rounded border-gray-300 hover:bg-black hover:text-white">    <Github size={20} className="hover:text-white"/> Code</button></a>
+                <a target="_blank" href={project.Demolink} >  <button className="flex border gap-3 p-1 px-2 rounded  bg-black text-white"> <ExternalLink size={20} className="hover:text-white"/> Demo </button></a>
             </div>
           </div>
           </div>))     }
