@@ -35,7 +35,12 @@ function Home() {
             </p>
           
           <div className="flex gap-4 pb-4 ">
-            <button className="bg-purple-600 text-white px-6 py-3 rounded-md hover:bg-purple-700 transition-colors">View Projects</button>
+          <a
+  href="/resume.pdf"
+  download="VS_Nikhil_Maheswar_Resume.pdf"
+
+> <button className="bg-purple-600 text-white px-6 py-3 rounded-md hover:bg-purple-700 transition-colors">Resume</button></a>
+           
             <button className="border border-purple-600 text-purple-600 px-6 py-3 rounded-md hover:bg-purple-50 transition-colors">Contact Me</button>
           </div>
           <div className="flex space-x-2 pb-4 md:"> 
