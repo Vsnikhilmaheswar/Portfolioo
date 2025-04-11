@@ -4,7 +4,7 @@ import airtm from './assets/airtm.png'
 import besteats from './assets/besteats.png'
 import Todo from './assets/Todo.png'
 import crypto from './assets/crypto.png'
-import portfolio from './assets/portfolio.png'
+import portfolio from './assets/Portfolio.png'
 function Project() {
   const projects = [
   
