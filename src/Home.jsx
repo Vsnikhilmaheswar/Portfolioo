@@ -73,7 +73,7 @@ function Home() {
                 
                 </div>
            </div>
-           <div className="hidden md:flex justify-center   ">
+           <div className=" md:flex justify-center   ">
                    {/* <img className="rounded-3xl bg-cover w-155 h-120 md:w-150 md:h-120" src="https://img.freepik.com/free-vector/online-games-concept_23-2148527136.jpg?t=st=1743571847~exp=1743575447~hmac=c80d0fc83a8da77fab27def43353166ac3bcb45f6f4933ac981b52974f46d63e&w=1380"/>     */}
                    <main className="mt-0">
       <Spline
