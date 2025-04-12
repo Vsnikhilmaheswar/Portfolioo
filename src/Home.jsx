@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "./assets/hero.jpg"; // Adjust path as needed
+ // Adjust path as needed
 import Nav from "./Nav"; // Ensure Nav is correctly imported
 import Spline from '@splinetool/react-spline';
 

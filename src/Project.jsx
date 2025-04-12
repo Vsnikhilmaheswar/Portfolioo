@@ -5,6 +5,7 @@ import besteats from './assets/besteats.png'
 import Todo from './assets/Todo.png'
 import crypto from './assets/crypto.png'
 import portfolio from './assets/Portfolio.png'
+import mobilestore from './assets/mobileStore.png'
 
 function Project() {
   const projects = [
@@ -43,8 +44,8 @@ function Project() {
       Demolink: "https://best-eats-blue.vercel.app/",
       Gitlink : "https://github.com/Vsnikhilmaheswar/Portfolioo"
 
-    },
-    {
+    },  
+     {
       id: 6,
       title: "TODO App",
       description: "A headless CMS with API endpoints for content delivery.",
@@ -53,17 +54,29 @@ function Project() {
       technologies: ["React JS","Json Server","Tailwind CSS"],
       Demolink: "https://todo-frontend-react-six.vercel.app/",
       Gitlink : "https://github.com/Vsnikhilmaheswar/Todo-Frontend-React"
-    },
+    }, 
     {
       id: 7,
       title: "DeepReality",
-      description: "A DeepFake detection system using VGG16",
-      image: Todo,
+      description: "A DeepFake detection system using CNN VGG16 ",
+      image: "https://github.com/Mareena03/DeepFake/blob/main/result%20upload.png?raw=true",
       category: "Web",
       technologies: ["React JS","FastAPI","Tailwind CSS","Tensorflow"],
-      Demolink: "https://todo-frontend-react-six.vercel.app/",
-      Gitlink : "https://github.com/Vsnikhilmaheswar/Todo-Frontend-React"
+      Demolink: "",
+      Gitlink : "https://github.com/Mareena03/DeepFake"
     },
+    {
+      id: 8,
+      title: "Mobile Store",
+      description: "A Mobile store website made using HTML and Bootstrap ",
+      image: mobilestore,
+      category: "Web",
+      technologies: ["HTML","CSS","Bootstrap"],
+      Demolink: "https://mobile-store-gules.vercel.app/",
+      Gitlink : "https://github.com/Vsnikhilmaheswar/Mobile-store/tree/main"
+    },
+  
+  
   ];
 
   return (
@@ -111,7 +124,7 @@ function Project() {
             </div>
             <div className="flex justify-between"> 
                 <a target="_blank" href={project.Gitlink} ><button className="flex border gap-3 p-1 px-2 rounded border-gray-300 hover:bg-black hover:text-white">    <Github size={20} className="hover:text-white"/> Code</button></a>
-                <a target="_blank" href={project.Demolink} >  <button className="flex border gap-3 p-1 px-2 rounded  bg-black text-white"> <ExternalLink size={20} className="hover:text-white"/> Demo </button></a>
+                <a target="_blank" href={project.Demolink} >  <button className="flex border gap-3 p-1 px-2 rounded  bg-black text-white hover:bg-white hover:border-1 hover:text-black" > <ExternalLink size={20} className="hover:text-white"/> Demo </button></a>
             </div>
           </div>
           </div>))     }

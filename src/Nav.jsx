@@ -4,7 +4,7 @@ import { TfiMenu } from "react-icons/tfi";
 import { TfiClose } from "react-icons/tfi";
 
 function Nav() {
-const [nav,setNav] = useState(false);
+const [nav,setNav] = useState(true);
 const scrollToProjects = () => {
   document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
 };
@@ -24,7 +24,6 @@ const scrollToProjects = () => {
 <ul className='hidden md:flex gap-5 md:gap-10'>
   <li  className='font-medium text-gray-800 hover:text-purple-600 transition-colors mt-2 cursor-pointer'>Home</li>
   <li className='font-medium text-gray-800 hover:text-purple-600 transition-colors mt-2 cursor-pointer' onClick={()=>scrollToProjects()}>project</li>
-  <li  className='font-medium text-gray-800 hover:text-purple-600 transition-colors mt-2 cursor-pointer'>Timeline</li>
   <li className='font-medium text-gray-800 hover:text-purple-600 transition-colors mt-2 cursor-pointer' >About</li>
   <li className='flex items-center justify-center' > <button className=' bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700'>Contact</button> </li>
 </ul>

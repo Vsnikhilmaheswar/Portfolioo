@@ -1,4 +1,15 @@
 import React, { useState } from 'react';
+import reactlogo from '../src/assets/react.svg'
+import JavaScriptlogo from '../src/assets/javascript.svg'
+import htmllogo from '../src/assets/html.svg'
+import typescriptlogo from '../src/assets/typescript.svg'
+import css from '../src/assets/css.svg'
+import vscode from '../src/assets/vscode.svg'
+import MongoDB from '../src/assets/mongodb.svg'
+import redux from '../src/assets/redux.svg'
+import github from '../src/assets/github.svg'
+import tailwind from '../src/assets/tailwind-css.svg'
+import node from '../src/assets/node-js.svg'
 
 export default function SkillsPage() {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -6,33 +17,29 @@ export default function SkillsPage() {
   // Skills data organized by categories with icons
   const skillsData = {
     frontend: [
-      { name: "React", icon: "⚛️", color: "bg-blue-500" },
-      { name: "JavaScript", icon: "📜", color: "bg-yellow-500" },
-      { name: "TypeScript", icon: "🔷", color: "bg-blue-600" },
-      { name: "HTML5", icon: "🌐", color: "bg-orange-500" },
-      { name: "CSS3", icon: "🎨", color: "bg-blue-400" },
-      { name: "Tailwind CSS", icon: "💨", color: "bg-teal-500" },
-      { name: "Redux", icon: "🔄", color: "bg-purple-500" },
+      { name: "React", icon: reactlogo  , color: "bg-gray-800" },
+      { name: "JavaScript", icon: JavaScriptlogo, color: "bg-yellow-500" },
+      { name: "TypeScript", icon: typescriptlogo, color: "bg-blue-600" },
+      { name: "HTML5", icon: htmllogo, color: "bg-orange-500" },
+      { name: "CSS3", icon: css, color: "bg-blue-400" },
+      { name: "Tailwind CSS", icon: tailwind, color: "bg-white" },
+      { name: "Redux", icon: redux, color: "bg-purple-500" },
       ,
     ],
     backend: [
-      { name: "Node.js", icon: "🟢", color: "bg-green-600" },
-      { name: "Express", icon: "🚂", color: "bg-gray-700" },
+      { name: "Node.js", icon: node, color: "bg-green-600" },
+      { name: "Express", icon: "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png", color: "bg-gray-500" },
    
    
-      { name: "MongoDB", icon: "🍃", color: "bg-green-500" },
+      { name: "MongoDB", icon:MongoDB, color: "bg-green-500" },
 
-      { name: "REST APIs", icon: "🔌", color: "bg-teal-600" },
+      { name: "REST APIs", icon: "https://media.lordicon.com/icons/wired/gradient/1330-rest-api.svg", color: "bg-black" },
     ],
     tools: [
-      { name: "Git", icon: "🔀", color: "bg-orange-600" },
-      { name: "GitHub", icon: "🐙", color: "bg-gray-800" },
-      { name: "VS Code", icon: "📝", color: "bg-blue-600" },
-      { name: "Docker", icon: "🐳", color: "bg-blue-500" },
-      { name: "Webpack", icon: "📦", color: "bg-blue-400" },
-      { name: "Jest", icon: "🃏", color: "bg-red-600" },
-      { name: "CI/CD", icon: "🔄", color: "bg-green-600" },
-      { name: "Figma", icon: "🎨", color: "bg-purple-500" },
+      { name: "Git", icon: github, color: "bg-orange-600" },
+      { name: "GitHub", icon: github, color: "bg-gray-800" },
+      { name: "VS Code", icon: vscode, color: "bg-gray-100" },
+      { name: "Figma", icon: "https://static.vecteezy.com/system/resources/previews/042/165/840/non_2x/figma-3d-logo-white-background-free-png.png", color: "bg-white" },
     ],
   
   };
@@ -118,8 +125,8 @@ export default function SkillsPage() {
               <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
               <div className="p-6">
                 <div className="flex items-center justify-center mb-4">
-                  <div className={`w-12 h-12 rounded-full flex items-center justify-center text-2xl ${skill.color} bg-opacity-20 shadow-inner p-2`}>
-                    {skill.icon}
+                  <div className={` rounded-2xl flex items-center justify-center text-2xl ${skill.color} bg-opacity-20 shadow-inner p-2`}>
+                   <img className='w-12 h-12' src={skill.icon}/>
                   </div>
                 </div>
                 <h3 className="text-center text-lg font-semibold text-white group-hover:text-purple-300 transition-colors duration-300">{skill.name}</h3>
